@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScFootsteps.Meetup.ExampleThree.Pages.CalculationPage">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="20, 40, 20, 20"
+                Android="20, 20, 20, 20"
+                WinPhone="20, 20, 20, 20" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
+
+      <Label Text="Calculation Page" VerticalOptions="Center" HorizontalOptions="Center" />
+
+      <Label Text="Operand One" />
+      <Entry x:Name="OperandOne" />
+
+      <Label Text="Operand Two" />
+      <Entry x:Name="OperandTwo" />
+
+      <Button x:Name="calculateButton" Text="Multiply And Save" Clicked="OnCalculateClicked" />
+
+
+      <Label Text="Last Calculation Result" />
+      <Label x:Name="Result" />
+
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
